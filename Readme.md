@@ -1,0 +1,1 @@
+Projeto para a criação automática de uma chave de segurança aleatória que se renova a cada certo período de tempo, desenvolvido com HTML, CSS e JavaScript.
