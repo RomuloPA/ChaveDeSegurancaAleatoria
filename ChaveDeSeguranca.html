@@ -11,7 +11,33 @@
 
     <div>
         <h1 id="titulo">Gerador de Chave de Segurança Aleatória</h1>
+        <h2 id="sub-titulo">Defina o tamanho da chave de segurança, e a cada quantos segundos ela irá modificar</h2>
+    </div>
+
+    <div class="container-seletor">
+        <span>Tamanho: <span id="valor">5</span> caracteres</span>
+        <input id="tamanho" class="tamanho" type="range" min="5" max="10" value="5"/>
+
+        <span>Tempo: <span id="tempo">10</span> segundos</span>
+        <input id="segundos" class="segundos" type="range" min="10" max="60" value="10"/>
+
+        <button id="botao" class="botao">Gerar Chave</button>
+    </div>
+
+    <div id="container-chave" class="container-chave hide">
+        <span class="mensagem">A chave de seguraça é:</span>
+        <span id="chave" class="chave"></span>
+        <span class="dica">Clique na chave de segurança para copiar!</span>
+    </div>
+
+    <div class="container-cronometro">
+        <div>
+            <span id="segundos">00</span>
+            <span class="tempo">Segundos</span>
+        </div>
     </div>
     
 </body>
+
+
 </html>
