@@ -11,14 +11,14 @@
 
     <div>
         <h1 id="titulo">Gerador de Chave de Segurança Aleatória</h1>
-        <h2 id="sub-titulo">Defina o tamanho da chave de segurança, e a cada quantos segundos ela irá modificar</h2>
+        <h3 id="sub-titulo">Defina o tamanho da chave de segurança, e a cada quantos segundos ela irá modificar.</h3 >
     </div>
 
     <div class="container-seletor">
-        <span>Tamanho: <span id="valor">5</span> caracteres</span>
+        <span>Tamanho: <span id="valor"></span> caracteres</span>
         <input id="tamanho" class="tamanho" type="range" min="5" max="10" value="5"/>
 
-        <span>Tempo: <span id="tempo">10</span> segundos</span>
+        <span>Tempo: <span id="tempo"></span> segundos</span>
         <input id="segundos" class="segundos" type="range" min="10" max="60" value="10"/>
 
         <button id="botao" class="botao">Gerar Chave</button>
@@ -32,12 +32,13 @@
 
     <div class="container-cronometro">
         <div>
-            <span id="segundos">00</span>
+            <span id="cronometro">00</span>
             <span class="tempo">Segundos</span>
         </div>
     </div>
+
+    <script src="Script.js"></script>
     
 </body>
-
 
 </html>

@@ -1,0 +1,166 @@
+*{
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(120deg, #3b79ffd8, #ffde25da););
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#titulo{
+    width: 600px;
+    margin-bottom: 24px;
+    color: #002974;
+    text-align: center;
+}
+
+#sub-titulo{
+    width: 600px;
+    margin-bottom: 24px;
+    color: #002974;
+    text-align: justify;
+}
+
+.container-seletor{
+    max-width: 480px;
+    margin: 14px 0;
+}
+
+.container-seletor span{
+    color: #fff;
+    font-size: 22px;
+}
+
+.tamanho{
+    margin-top: 8px;
+    width: 100%;
+    height: 18px;
+    border-radius: 5px;
+    /*background: blueviolet;*/
+    /*outline: none;*/
+    opacity: 0.7;
+}
+
+.segundos{
+    margin-top: 8px;
+    width: 100%;
+    height: 18px;
+    border-radius: 5px;
+    /*background: blueviolet;*/
+    /*outline: none;*/
+    opacity: 0.7;
+}
+
+.botao{
+    height: 40px;
+    margin-top: 40px;
+    background-color: #0259fb;
+    border:0;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container-chave{
+    max-width: 350px;
+    margin: 14px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mensagem{
+    text-align: center;
+    color: #FFF;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  } 
+
+  .chave{
+    height: 60px;
+    background-color: rgba(0,0,0,0.40);
+    border: 1px solid #313131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #FFF;
+    border-radius: 4px;
+    transition: transform 0.5s;
+  }
+
+  .chave:hover{
+    transform: scale(1.05);
+    border-color: #FFF;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .dica{
+    color: #FFF;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    background: rgb(15, 15, 15);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    text-align: center;
+  }
+
+  .container-chave:hover .dica{
+    bottom: 50px;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .container-cronometro {
+    display: flex;
+    margin-top: 24px;
+    align-items: center;
+    justify-content: space-around;
+    height: 120px;
+    width: 200px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);*/
+}
+
+.container-cronometro div {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    background: rgb(255, 179, 0);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.container-cronometro span {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.container-cronometro span.tempo {
+    font-size: 15px;
+}
