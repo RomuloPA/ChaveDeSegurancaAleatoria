@@ -21,10 +21,10 @@
         <span>Tempo: <span id="tempo"></span> segundos</span>
         <input id="segundos" class="segundos" type="range" min="10" max="60" value="10"/>
 
-        <button id="botao" class="botao">Gerar Chave</button>
+        <button id="botao" class="botao" onclick="gerarChave()">Gerar Chave</button>
     </div>
 
-    <div id="container-chave" class="container-chave hide">
+    <div id="container-chave" onclick="copiaChave()" class="container-chave hide">
         <span class="mensagem">A chave de seguraça é:</span>
         <span id="chave" class="chave"></span>
         <span class="dica">Clique na chave de segurança para copiar!</span>
