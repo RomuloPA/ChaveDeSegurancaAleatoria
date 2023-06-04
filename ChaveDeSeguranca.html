@@ -21,7 +21,7 @@
         <span>Tempo: <span id="tempo"></span> segundos</span>
         <input id="segundos" class="segundos" type="range" min="10" max="60" value="10"/>
 
-        <button id="botao" class="botao" onclick="gerarChave()">Gerar Chave</button>
+        <button id="botao" class="botao" onclick="gerarChave(), stop(), start()">Gerar Chave</button>
     </div>
 
     <div id="container-chave" onclick="copiaChave()" class="container-chave hide">

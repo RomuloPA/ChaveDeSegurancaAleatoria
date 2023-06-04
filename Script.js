@@ -1,14 +1,14 @@
-let tamanhoElement = document.querySelector("#tamanho");
-let segundosElement = document.querySelector("#segundos");
-let botaobuttonElement = document.querySelector("#botao");
+tamanhoElement = document.getElementById("tamanho");
+segundosElement = document.getElementById("segundos");
+botaoElement = document.getElementById("botao");
 
-let tamanhoChave = document.querySelector("#valor");
-let tempoSegundos = document.querySelector("#tempo");
-let chave = document.querySelector("#chave");
+tamanhoChave = document.getElementById("valor");
+tempoSegundos = document.getElementById("tempo");
+chave = document.getElementById("chave");
 
-let containerChave = document.querySelector("#container-chave");
+containerChave = document.getElementById("container-chave");
 
-let charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 let novaChave = '';
 
 tamanhoChave.innerHTML = tamanhoElement.value;
@@ -43,6 +43,34 @@ function copiaChave(){
     navigator.clipboard.writeText(novaChave);
 }
 
+
 var ss = 0;
 var tempoCron = 1000;
 var cron;
+
+
+function start() {
+    cron = setInterval(() => { timer(); }, tempoCron);
+}
+
+function stop() {
+    clearInterval(cron);
+    ss = 0;
+
+    document.getElementById('cronometro').innerText = '00';
+}
+
+
+function timer() {
+    ss++; 
+
+    if (ss == tempoSegundos.innerHTML) { 
+        ss = 0; 
+    }
+
+    var format = (ss < 10 ? '0' + ss : ss);
+    
+    document.getElementById('cronometro').innerText = format;
+
+    return format;
+}
