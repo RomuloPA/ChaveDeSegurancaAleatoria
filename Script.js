@@ -24,6 +24,7 @@ segundos.oninput = function() {
 }
 
 
+
 function gerarChave() {
 
     let codigo = '';
@@ -35,6 +36,7 @@ function gerarChave() {
     containerChave.classList.remove("hide");
     chave.innerHTML = codigo;
     novaChave = codigo;
+    navigator.clipboard.writeText(novaChave);
 
 }
 
@@ -47,6 +49,8 @@ function copiaChave(){
 var ss = 0;
 var tempoCron = 1000;
 var cron;
+var resetaTempo = tempoSegundos.innerHTML;
+var resetaTempoNum = parseInt(resetaTempo);
 
 
 function start() {
@@ -64,8 +68,12 @@ function stop() {
 function timer() {
     ss++; 
 
-    if (ss == tempoSegundos.innerHTML) { 
-        ss = 0; 
+    resetaTempo = tempoSegundos.innerHTML;
+    resetaTempoNum = parseInt(resetaTempo);
+
+    if (ss == resetaTempoNum + 1) { 
+        ss = 0;
+        gerarChave();
     }
 
     var format = (ss < 10 ? '0' + ss : ss);
